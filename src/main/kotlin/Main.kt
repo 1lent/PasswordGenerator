@@ -1,16 +1,20 @@
 package com.lentuwu
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    val lower = "qwertyuiopasdfghjklzxcvbnm"
+    val upper = lower.uppercase()
+    val symbols = "!@#$%^&*()_.><?/+"
+    val together = lower + upper + symbols
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+
+    for (chars in 1..8) {
+        val randomChars = together.random()
+        print(randomChars)
     }
 }
+
+/*
+*
+* first prototype making my own as yt made it look harder than it really is lmfao
+*
+* */
